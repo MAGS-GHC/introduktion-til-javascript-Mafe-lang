@@ -377,7 +377,157 @@ talrække_2.reverse();
 console.log(talrække_2)
 
 
+console.log("Opgave 5.1 - Skriv noget kode eller kode sammen med en knap, så i eksekvere følgende funktion:")
 
+function myFunction(){
+  console.log("Hello World")
+}
+
+console.log("Opgave 5.2 - I skal lave en funktion som tager 2 tal og returnerer summen af dem.")
+
+
+function addNumbers(a, b) {
+  return a + b;
+}
+
+let result = addNumbers(3,7); // => 10
+console.log(result);
+
+let svar = "Ja" || "ja" || "jA"
+function rightAnswer(svar)
+{
+if(svar=="Ja"||svar=="ja"||svar=="jA"){
+  return "True"; 
+} else {
+  return "False";
+}
+}
+
+let result2 = rightAnswer("Ja");
+console.log(result2)
+
+
+console.log(" Opgave 5.4 - Lav en funktion som fungere som en password-tjekker, i skal definere et password i koden og derefter lave en funktion som kun skriver true hvis man skriver det rigtige kodeord og false hvis det er forkert")
+
+let password = "Fodbold123";
+function passwordChecker(password)
+{
+if(password==="Fodbold123"){
+  return "True";
+} else {
+  return "False";
+}
+}
+
+let input = passwordChecker("Fodbold123");
+console.log(input)
+
+
+console.log("Opgave 5.5 - Lav en funktion som i opgaven før, men for brugernavn. Forskellen er at et brugernavn ikke er case-sensitiv, altså at den er ligeglad med store og små bogstaver.");
+
+
+
+let userName = "Mags";
+
+function UserNameChecker(inputThree){
+
+  userName = userName.toLowerCase();
+  inputThree = inputThree.toLowerCase();
+
+if (userName === inputThree){
+  return true;
+} else {
+  return false;
+}
+}
+
+inputTwo = UserNameChecker("Hej");
+console.log(inputTwo);
+
+
+console.log("Lav et program som summere følgende array, uden brug af Aggregat Funktioner:")
+
+ talrække = [0,12,0,22,300,4,5];
+
+ let sum = 0;
+
+ for (let i = 0; i < talrække.length; i++) {
+  sum += talrække[i];
+ }
+
+
+ console.log("Summen af talrække:", sum);
+
+ 
+console.log("Opgave 6.2 - Lav et program som skriver alle værdierne i dette array, ved brug af foreach:")
+
+talrækkeTo = [0, 12, 0, 22, 300, 4, 5];
+
+function printElement(element) {
+    console.log(element*2);
+}
+talrækkeTo.forEach(printElement);
+
+console.log(" Opgave 6.3 - Lav et program som returnere indexet af det højeste tal, altså giver dens placering i begge disse arrays")
+
+InventoryOne = [0, 12, 0, 22, 300, 4, 5, 12, 12, 212, 12]
+InventoryTwo = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 122]
+
+
+let index = InventoryOne.indexOf(Math.max(...InventoryOne),0);
+console.log("Highest value in InventoryOne is placed at:",index);
+
+let index2 = InventoryTwo.indexOf(Math.max(...InventoryTwo),0);
+console.log("Highest value in InventoryTwo is placed at:",index2);
+
+
+console.log("Opgave 6.4 - Lav et program som tæller hvor mange gange 12, står i den her array:")
+
+Bag = [0, 12, 0, 22, 300, 4, 5, 12, 12, 212, 12];
+
+const specificNumber = 12;
+let count = 0;
+
+for(dK = 0; dK < Bag.length; dK++) {
+  if(Bag[dK] === specificNumber){
+    count++ }
+}
+console.log("Tallet",specificNumber, "optræder", count, "gange");
+
+
+kontier = [0, -12, 0, -22, -300, 4, 5, -12, 12, -212, 12]
+
+let count2 = 0;
+
+for(DB = 0; DB < kontier.length; DB++){
+  if(kontier[DB] > 0){
+    count2++
+  }
+}
+console.log("Der er", count2, "Positive kontier");
+
+console.log("Lav et program som finder gennemsnittet af følgende array og alle andre arrays bestående af tal uden brug af Aggregat Funktioner:")
+Income = [0, 12, 0, 22, 300, 4, 5, 1000, -50, 32];
+
+ let sumTre = 0;
+
+ for (oP = 0; oP < Income.length; oP++) {
+  sumTre += Income[oP];
+ }
+
+ console.log("Summen af talrække", sumTre);
+ console.log("Gennemsnit", sumTre/Income.length);
+console.log("Længde på talrække", Income.length);
+
+console.log("Opgave 7.1 - Lav et program som finder variansen af følgende array og alle andre arrays bestående af tal uden brug af Aggregat Funktioner:")
+
+Normalfordeling = [0, 12, 0, 22, 300, 4, 5, 1000, -50, 32]
+
+let sumFire = 0;
+
+ for (saF = 0; saF < Normalfordeling.length; saF++) {
+  sumFire += Normalfordeling[saF];
+ }
 
 
 
